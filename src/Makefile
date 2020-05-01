@@ -18,10 +18,10 @@ all: $(OBJ)
 $(ODIR)/%.o: %.cpp $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-client: $(ODIR)/%.o
+client: $(ODIR)/client.o
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
-server: $(OBIR)/%.o
+server: $(ODIR)/server.o
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
 .PHONY: clean

@@ -15,11 +15,15 @@ Vanilla implementation of RSA Encryption in Client Server model in C++
 `git clone --recursive https://github.com/iamarshsingh/server-client-encryption`
 
 2. Navigate to src directory and execute the makefile:
-`../make`
+`./make`
 
-3. Firstly execute:
+3. Now using make file, produce binary files:
+`./make/server`, 
+`./make/client`
+
+4. Firstly execute:
 `./server`
 and then enter the desired encryption key primes length.
 
-4. Open a second terminal in the same directory and execute:
+5. Open a second terminal in the same directory and execute:
 `./client`
